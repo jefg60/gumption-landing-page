@@ -1,0 +1,76 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: silver;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  color: silver;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 68%;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60%;
+}
+
+.simplebutton {
+  background-color: silver;
+}
+
+.button {
+  background-color: silver;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 5% 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  margin: 4px 2px;
+  transition: unset;
+  cursor: pointer;
+  width: 90%;
+}
+
+.greenbutton {
+  border: 2px solid #4CAF50;
+}
+
+.greenbutton:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.bluebutton {
+  border: 2px solid #008CBA;
+}
+
+.bluebutton:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.redbutton {
+  border: 2px solid #FF0000;
+}
+
+.redbutton:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+.orangebutton {
+  border: 2px solid #FFA500;
+}
+
+.orangebutton:hover {
+  background-color: #FFA500;
+  color: white;
+}
