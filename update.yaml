@@ -1,0 +1,12 @@
+---
+- name: update HTML files from templates
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: template 2 versions
+      template:
+        src: "index_{{ item }}.html"
+        dest: "deploy/{{ item }}.html"
+      loop:
+        - live
+        - idle
