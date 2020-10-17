@@ -6,7 +6,7 @@
     - name: template 2 versions
       template:
         src: "index_{{ item }}.html"
-        dest: "deploy/{{ item }}.html"
+        dest: "deploy/{{ item }}/index.html"
       loop:
         - live
         - idle
