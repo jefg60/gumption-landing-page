@@ -1,7 +1,18 @@
 ---
 - name: update HTML files from templates
   hosts: localhost
-  gather_facts: no
+  gather_facts: true
+  vars:
+    current_race_name: "iRacing Endurance Le Mans Series 6H at Le Mans"
+    qual_hour: 14 #integer, dont quote
+    qual_min: "00" #string to keep any leading zeros, in quotes
+    race_hour: 14 #integer, dont quote
+    race_min: "20" #string to keep any leading zeros, in quotes
+    qual_start_gmt: "{{ qual_hour }}:{{ qual_min }}"
+    race_start_gmt: "{{ race_hour }}:{{ race_min }}"
+    qual_start_bst: "{{ qual_hour +1 }}:{{ qual_min }}"
+    race_start_bst: "{{ race_hour +1 }}:{{ race_min }}"
+    matstace: false
   tasks:
     - name: template 2 versions
       template:
