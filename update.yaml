@@ -3,11 +3,11 @@
   hosts: localhost
   gather_facts: true
   vars:
-    current_race_name: "Winter N24 Qualifying race (6H)"
+    current_race_name: "Winter N24"
     qual_hour: 13 #integer, dont quote
-    qual_min: "00" #string to keep any leading zeros, in quotes
+    qual_min: "30" #string to keep any leading zeros, in quotes
     race_hour: 14 #integer, dont quote
-    race_min: "00" #string to keep any leading zeros, in quotes
+    race_min: "15" #string to keep any leading zeros, in quotes
     qual_start_gmt: "{{ qual_hour }}:{{ qual_min }}"
     race_start_gmt: "{{ race_hour }}:{{ race_min }}"
     qual_start_bst: "{{ qual_hour +1 }}:{{ qual_min }}"
