@@ -3,11 +3,11 @@
   hosts: localhost
   gather_facts: true
   vars:
-    current_race_name: "iRacing 12H of Sebring"
-    qual_hour: 7 #integer, dont quote
-    qual_min: "30" #string to keep any leading zeros, in quotes
-    race_hour: 7 #integer, dont quote
-    race_min: "40" #string to keep any leading zeros, in quotes
+    current_race_name: "Creventic Spa 12H"
+    qual_hour: 13 #integer, dont quote
+    qual_min: "20" #string to keep any leading zeros, in quotes
+    race_hour: 13 #integer, dont quote
+    race_min: "35" #string to keep any leading zeros, in quotes
     qual_start_gmt: "{{ qual_hour }}:{{ qual_min }}"
     race_start_gmt: "{{ race_hour }}:{{ race_min }}"
     qual_start_bst: "{{ qual_hour +1 }}:{{ qual_min }}"
