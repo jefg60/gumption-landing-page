@@ -3,16 +3,18 @@
   hosts: localhost
   gather_facts: true
   vars:
-    current_race_name: "Creventic 12 hours of Hockenheim"
-    qual_hour: 13 #integer, dont quote, GMT
-    qual_min: "20" #string to keep any leading zeros, in quotes
-    race_hour: 13 #integer, dont quote, GMT
-    race_min: "30" #string to keep any leading zeros, in quotes
+    current_race_name: "VRS Global Endurance 24h Le Mans"
+    qual_hour: 7 #integer, dont quote, GMT
+    qual_min: "00" #string to keep any leading zeros, in quotes
+    race_hour: 7 #integer, dont quote, GMT
+    race_min: "40" #string to keep any leading zeros, in quotes
     qual_start_gmt: "{{ qual_hour }}:{{ qual_min }}"
     race_start_gmt: "{{ race_hour }}:{{ race_min }}"
     qual_start_bst: "{{ qual_hour +1 }}:{{ qual_min }}"
     race_start_bst: "{{ race_hour +1 }}:{{ race_min }}"
+    hatracer: true
     matstace: true
+    jjwolf36: true
   tasks:
     - name: template 2 versions
       template:

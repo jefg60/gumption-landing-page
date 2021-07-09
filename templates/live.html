@@ -14,15 +14,24 @@
 {% endif %}
   <table style="width:800px">
     <tr>
+{% if matstace %}
       <td valign="top", align="center", width=20%, text-align="center">
         <button class="button greenbutton" onclick="window.open('https://twitch.tv/matstace','_blank')"/>
         Live Stream
         </button>
       </td>
-{% if matstace %}
+{% endif %}
+{% if hatracer %}
       <td valign="top", align="center", width=20%, text-align="center">
         <button class="button greenbutton" onclick="window.open('https://twitch.tv/hatracer','_blank')"/>
-        Live Stream Two
+        Live Stream 2
+        </button>
+      </td>
+{% endif %}
+{% if jjwolf36 %}
+      <td valign="top", align="center", width=20%, text-align="center">
+        <button class="button greenbutton" onclick="window.open('https://twitch.tv/jjwolf36','_blank')"/>
+        Live Stream 3
         </button>
       </td>
 {% endif %}
