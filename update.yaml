@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: true
   vars:
-    current_race_name: "Daytona 24h"
+    current_race_name: "Bathurst 12h"
     qual_hour: 07 #integer, dont quote, GMT
     qual_min: "30" #string to keep any leading zeros, in quotes
     race_hour: 07 #integer, dont quote, GMT
