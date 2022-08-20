@@ -7,7 +7,7 @@
     qual_hour: 07 #integer, dont quote, GMT
     qual_min: "20" #string to keep any leading zeros, in quotes
     race_hour: 07 #integer, dont quote, GMT
-    race_min: "50" #string to keep any leading zeros, in quotes
+    race_min: "16" #string to keep any leading zeros, in quotes
     qual_start_gmt: "{{ qual_hour }}:{{ qual_min }}"
     race_start_gmt: "{{ race_hour }}:{{ race_min }}"
     qual_start_bst: "{{ qual_hour +1 }}:{{ qual_min }}"
