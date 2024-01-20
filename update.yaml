@@ -13,7 +13,7 @@
     qual_start_bst: "{{ qual_hour +1 }}:{{ qual_min }}"
     race_start_bst: "{{ race_hour +1 }}:{{ race_min }}"
     hatracer: true
-    matstace: false
+    matstace: true
     jjwolf36: false
   tasks:
     - name: template 2 versions
